@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#68965a, rgb(80, 200, 200));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+  max-width: 1200px;
+}
+
+.p1 {
+  background-color: #FFF59D;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.titleH {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  letter-spacing: -2px;
+}
+
+.globe-img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.box {
+  background-color: #FFEB3B;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box:active {
+  transform: scale(0.85);
+  background-color: #FFF59D;
+}
+
+.testpic {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
