@@ -1,6 +1,6 @@
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-image: linear-gradient(#68965a, rgb(80, 200, 200));
   background-repeat: no-repeat;
@@ -8,12 +8,22 @@ body {
   background-size: cover;
   height: 100%;
   margin: 0;
-  flex-direction: column;
+  font-family: Arial, sans-serif;
 }
 
-.center {
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+main.center {
   text-align: center;
   max-width: 1200px;
+  padding: 20px;
+}
+
+footer {
+  margin-top: 20px;
 }
 
 .p1 {
@@ -23,14 +33,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   margin: 20px auto;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-.titleH {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 300;
-  letter-spacing: -2px;
 }
 
 .globe-img {
@@ -42,8 +44,8 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   margin-top: 20px;
 }
@@ -53,20 +55,21 @@ body {
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
   width: 100%;
+  max-width: 400px;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  font-family: Arial, sans-serif;
-  text-align: center;
   cursor: pointer;
+  outline: none;
 }
 
-.box:hover {
+.box:hover,
+.box:focus {
   transform: scale(1.1);
+  outline: 2px solid #333;
 }
 
 .box:active {
-  transform: scale(0.85);
+  transform: scale(0.95);
   background-color: #FFF59D;
 }
 
@@ -74,4 +77,11 @@ body {
   margin-top: 20px;
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
